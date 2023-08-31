@@ -90,7 +90,7 @@ async def _help(bot, update):
     await update.reply_text("Supported file types:\n\n- Video\n- Audio\n- Photo\n- Document\n- Sticker\n- GIF\n- Voice note\n- Video note\n\n If bot didn't respond, contact @xgorn", True)
 
 
-async def __reply(update, copied):
+async def _reply(update, copied):
     msg_id = copied.message_id
     if copied.video:
         unique_idx = copied.video.file_unique_id

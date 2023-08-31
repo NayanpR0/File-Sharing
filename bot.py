@@ -26,7 +26,7 @@ with xbot:
     xbot_username = xbot.get_me().username  # Better call it global once due to telegram flood id
     print("Bot started!")
     
-    xbot.send_message(int(OWNER_ID2), "Bot started!")
+    #xbot.send_message(int(OWNER_ID2), "Bot started!")
     
 
 

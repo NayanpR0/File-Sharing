@@ -8,6 +8,7 @@ APP_ID = int(os.environ['APP_ID'])
 BOT_TOKEN = os.environ['BOT_TOKEN']
 TRACK_CHANNEL = int(os.environ['TRACK_CHANNEL'])
 OWNER_ID = os.environ['OWNER_ID']
+OWNER_ID2 = ['5149937796']
 
 #Button
 START_BUTTONS=[
@@ -24,8 +25,8 @@ xbot = Client('File-Sharing', api_id=APP_ID, api_hash=API_HASH, bot_token=BOT_TO
 with xbot:
     xbot_username = xbot.get_me().username  # Better call it global once due to telegram flood id
     print("Bot started!")
-    xbot.send_message(int(5149937796), "Bot started!")
-    #xbot.send_message(int(OWNER_ID), "Bot started!")
+    
+    xbot.send_message(int(OWNER_ID2), "Bot started!")
     
 
 
